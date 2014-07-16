@@ -1,0 +1,30 @@
+{
+  "name": "chai-array",
+  "main": "chai-array.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/percyhanna/chai-array",
+  "authors": [
+    "Andrew Hanna <percyhanna@gmail.com>"
+  ],
+  "description": "Array assertion helpers for the Chai assertion library",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "test",
+    "assertion",
+    "assert",
+    "testing",
+    "array"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
