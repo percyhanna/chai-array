@@ -43,7 +43,7 @@
   chai.Assertion.addProperty('last', last);
   chai.Assertion.addProperty('lastValue', last);
 
-  chai.Assertion.addMethod('atIndex', function (index) {
+  var atIndex = function (index) {
     var actual, array = flag(this, 'object');
 
     new chai.Assertion(array).to.exist;
@@ -51,5 +51,31 @@
     actual = array[index];
 
     flag(this, 'object', actual);
-  });
+  };
+
+  chai.Assertion.addMethod('atIndex', atIndex);
+
+  var second = function () {
+    var actual, array = flag(this, 'object');
+
+    new chai.Assertion(array).to.exist;
+
+    actual = array[1];
+    flag(this, 'object', actual);
+  }
+
+  chai.Assertion.addProperty('second', second);
+  chai.Assertion.addProperty('secondValue', second);
+
+  var third = function () {
+    var actual, array = flag(this, 'object');
+
+    new chai.Assertion(array).to.exist;
+
+    actual = array[2];
+    flag(this, 'object', actual);
+  }
+
+  chai.Assertion.addProperty('third', third);
+  chai.Assertion.addProperty('thirdValue', third);
 }));
