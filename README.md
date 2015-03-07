@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/percyhanna/chai-array.svg)](https://travis-ci.org/percyhanna/chai-array)
+
 # chai-array
 
 chai-array is an extension to the [chai](http://chaijs.com/) assertion library that
